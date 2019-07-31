@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import useKeyPress from '../hooks/useKeyPress';
 
 const NavLink = styled(AniLink)`
   color: #fff;
@@ -19,6 +20,16 @@ const NavLink = styled(AniLink)`
 `;
 
 const Controls = ({previous, next}) => {
+  useKeyPress('ArrowLeft', () => {
+    if (previous) {
+      document.querySelector('#js-prev-button').click();
+    }
+  })
+  useKeyPress('ArrowRight', () => {
+    if (next) {
+      document.querySelector('#js-next-button').click();
+    }
+  })
   return (
     <nav sx={{
       fontFamily: 'default',
@@ -28,8 +39,8 @@ const Controls = ({previous, next}) => {
       left: '50%',
       transform: 'translateX(-50%)'
     }}>
-      <NavLink swipe direction="right" to={previous ? previous : '/'} previous disabled={!previous}>➪</NavLink>
-      <NavLink swipe direction="left" to={next ? next : '/'} disabled={!next}>➪</NavLink>
+      <NavLink id="js-prev-button" swipe direction="right" to={previous ? previous : '/'} previous="true" disabled={!previous}>➪</NavLink>
+      <NavLink id="js-next-button" swipe direction="left" to={next ? next : '/'} disabled={!next}>➪</NavLink>
     </nav>
   )
 }
