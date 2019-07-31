@@ -5,9 +5,9 @@
  */
 export default {
   colors: {
-    text: "#232129",
-    background: "#fff",
-    primary: "#639",
+    text: "#fff",
+    background: "#222",
+    primary: "#bada33",
   },
   fonts: {
     default:
@@ -29,24 +29,11 @@ export default {
       fontSize: 1,
       lineHeight: "text",
     },
-    Header: {
-      backgroundColor: "primary",
-      color: "background",
-      fontWeight: "bold",
-      margin: 0,
-      span: {
-        display: "block",
-        fontSize: 3,
-        margin: "0 auto",
-        maxWidth: "container",
-        padding: 3,
-        width: "90vw",
-      },
-    },
     Main: {
       margin: "0 auto",
-      maxWidth: "container",
       width: "90vw",
+      display: "flex",
+      alignItems: 'center',
     },
     Container: {
       padding: 0,

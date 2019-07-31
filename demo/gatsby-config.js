@@ -5,5 +5,11 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-theme-jam-example"],
+  plugins: [{
+    resolve: "gatsby-theme-slideshow",
+    options: {
+      contentPath: "slides",
+      basePath: "/"
+    }
+  }],
 }
