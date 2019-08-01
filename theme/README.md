@@ -2,6 +2,20 @@
 
 This is an extremely simple, extensible theme for making slideshows with Gatsby.
 
+For now slides transition with a sliding effect. I would like to make this configurable in the future.
+I wanted to make this as simple as possible to start.
+
+Slides should be .mdx files with `slug` and `order` properties in the frontmatter section.
+
+e.g.
+
+```mdx
+---
+slug: first-slide
+order: 1
+---
+```
+
 See the [live demo](https://gatsby-theme-slideshow.netlify.com)
 
 ## Installation

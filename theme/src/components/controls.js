@@ -20,6 +20,8 @@ const NavLink = styled(AniLink)`
 `;
 
 const Controls = ({previous, next}) => {
+  // Detect arrow keys and use buttons to navigate.
+  // This is to trigger the slide transitions.
   useKeyPress('ArrowLeft', () => {
     if (previous) {
       document.querySelector('#js-prev-button').click();
@@ -30,6 +32,7 @@ const Controls = ({previous, next}) => {
       document.querySelector('#js-next-button').click();
     }
   })
+
   return (
     <nav sx={{
       fontFamily: 'default',

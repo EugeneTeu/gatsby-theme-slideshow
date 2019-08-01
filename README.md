@@ -2,6 +2,8 @@
 
 This repo is a simple slideshow gatsby theme with working demo.
 
+Examples of how simple slides could be formatted can be found in `/demo/slides`
+
 It includes:
 - the slideshow theme (located in `theme/`)
 - a demo site (located in `demo/`) that installs the theme

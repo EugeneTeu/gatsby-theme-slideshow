@@ -11,6 +11,7 @@ export default function Slide({ pageContext, data: { mdx: post } }) {
   return (
     <Layout>
       <MDXRenderer>{post.code.body}</MDXRenderer>
+      {/* Portal for keeping controls above all page transitions. */}
       <TransitionPortal>
         <Controls previous={previous} next={next}></Controls>
       </TransitionPortal>
