@@ -39,8 +39,25 @@ const Controls = ({previous, next}) => {
       left: '50%',
       transform: 'translateX(-50%)'
     }}>
-      <NavLink id="js-prev-button" swipe direction="right" to={previous ? previous : '/'} previous="true" disabled={!previous}>➪</NavLink>
-      <NavLink id="js-next-button" swipe direction="left" to={next ? next : '/'} disabled={!next}>➪</NavLink>
+      <NavLink
+        id="js-prev-button"
+        swipe
+        direction="right"
+        to={previous ? previous : '/'}
+        previous="true"
+        disabled={!previous}
+        sx={{ ":focus": { color: 'primary' }}}>
+        ➪
+      </NavLink>
+      <NavLink
+        id="js-next-button"
+        swipe
+        direction="left"
+        to={next ? next : '/'}
+        disabled={!next}
+        sx={{ ":focus": { color: 'primary' }}}>
+        ➪
+      </NavLink>
     </nav>
   )
 }
