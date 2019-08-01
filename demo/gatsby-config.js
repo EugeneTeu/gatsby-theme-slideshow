@@ -8,8 +8,7 @@ module.exports = {
   plugins: [{
     resolve: "gatsby-theme-slideshow",
     options: {
-      contentPath: "slides",
-      basePath: "/"
+      contentPath: "slides"
     }
   }],
 }

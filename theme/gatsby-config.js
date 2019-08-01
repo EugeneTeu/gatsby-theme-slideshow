@@ -1,5 +1,5 @@
 const path = require("path");
-module.exports = ({ contentPath = "content", basePath = "/" }) => {
+module.exports = ({ contentPath = "content" }) => {
   return {
     siteMetadata: {
       title: "Gatsby Slideshow Theme",
