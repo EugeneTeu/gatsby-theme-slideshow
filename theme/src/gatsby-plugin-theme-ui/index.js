@@ -33,7 +33,7 @@ export default {
       margin: "0 auto",
       width: "90vw",
       display: "flex",
-      alignItems: 'center',
+      alignItems: "center",
     },
     Container: {
       padding: 0,

@@ -2,7 +2,7 @@ import React from "react"
 import { css, Global } from "@emotion/core"
 import { Layout as StyledLayout, Main, Container } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
